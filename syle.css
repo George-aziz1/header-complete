@@ -1,0 +1,90 @@
+.toggle {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 8px;
+  }
+  .toggle span {
+    width: 100%;
+    background-color: rgba(54, 54, 54, 0.74);
+    height: 4px;
+    transition: 0.5s;
+  }
+  .toggle:hover span {
+    background-color: rgb(22, 22, 22);
+  }
+  nav {
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+    transform: translateY(-100%);
+  }
+  nav.open {
+    transform: translateY(0);
+  }
+  nav .close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: white;
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  nav .close:hover {
+    color: indianred;
+    border-color: indianred;
+  }
+  nav a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 80px;
+    transition: 0.5s;
+  }
+  nav a:hover {
+    background-color: rgb(0 0 0 / 50%);
+  }
+
+  .media-header a{
+    display: inline;
+    padding: 30px;
+    position: relative;
+    left: 37%;
+    top: 20%;
+  }
+
+  .media-header a:hover {
+    background-color: none ;
+  }
+
+  #reload button {
+    border: none ;
+    color: white;
+    background: none;
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 26rem;
+  }
